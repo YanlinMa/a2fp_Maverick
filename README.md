@@ -1,6 +1,2 @@
 # a2fp_Maverick
-Dorothy Ng
-
-Andrea Ma
-
-Ege Duman
+Members: Dorothy Ng, Andrea Ma, Ege Duman
