@@ -12,3 +12,5 @@
 	boardgame-online.com
 	Godville
 	Data Table Sorting
+	FreeCell
+	RPG
