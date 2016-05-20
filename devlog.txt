@@ -5,12 +5,18 @@
                                    
  -- Dorothy Ng, Andrea Ma, Ege Duman --
 
+Topics: Stacks, Queue, backtracking, state space search, binary trees, quickSort
+
 >> May 18, 2016
-	Our initial idea is to do 1010!
-	Might consider Snakes and Ladders, but the player only needs to roll dice.
-	What about MadLib?
+	1010!
+	Snakes and Ladders
+	MadLib
 	boardgame-online.com
 	Godville
 	Data Table Sorting
 	FreeCell
 	RPG
+
+>> May 20, 2016
+	Chess
+	Something like the GROW games from eyezmaze
