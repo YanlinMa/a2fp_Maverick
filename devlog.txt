@@ -20,3 +20,6 @@ Topics: Stacks, Queue, backtracking, state space search, binary trees, quickSort
 >> May 20, 2016
 	Chess
 	Something like the GROW games from eyezmaze
+
+>> May 22, 2016
+	Project proposal for MadLib, submitted via email
