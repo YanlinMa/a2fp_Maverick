@@ -8,18 +8,21 @@
 Topics: Stacks, Queue, backtracking, state space search, binary trees, quickSort
 
 >> May 18, 2016
-	1010!
-	Snakes and Ladders
-	MadLib
-	boardgame-online.com
-	Godville
-	Data Table Sorting
-	FreeCell
-	RPG
+   1010!
+   Snakes and Ladders
+   MadLib
+   boardgame-online.com
+   Godville
+   Data Table Sorting
+   FreeCell
+   RPG
 
 >> May 20, 2016
-	Chess
-	Something like the GROW games from eyezmaze
+   Chess
+   Something like the GROW games from eyezmaze
 
 >> May 22, 2016
-	Project proposal for MadLib, submitted via email
+   Project proposal for MadLib, submitted via email
+
+>> May 31, 2016
+   Decided on MadLib, using Project Gutenburg to pull excerpts from to modify
