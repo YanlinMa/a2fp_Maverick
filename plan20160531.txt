@@ -1,2 +1,5 @@
 ~Finalize project idea
 ~Submit new proposal
+
+IDEA: MadLib
+Three main parts: Part of speech identifier, Madlibify, pulling up text files
