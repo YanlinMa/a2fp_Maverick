@@ -3,3 +3,25 @@
 
 IDEA: MadLib
 Three main parts: Part of speech identifier, Madlibify, pulling up text files
+
+Pulling up text files:
+  - Opens a plaintext file of a book from Project Gutenberg
+  - A random except containing x sentences is returned.
+    ~ Done by counting x number of periods(.) not preceded by Mr, Ms, Mrs, etc. (and single letters?)
+
+Parts of Speech identifier:
+  - Breaks up excerpt given by "pulling up text files" by word
+  - Labels each by part of speech
+    ~ Check if it is a word (e.g. not a punctuation or numerical character)
+    ~ Check if it is gibberish or not (optional)
+    ~ Check for common traits for a part of speech (e.g. -ly means adverb, -ing means gerund)
+    ~ If cannot categorize by common traits, pull up a library to help
+    
+    ~ Nouns will be treated differently
+    ~ Keep track of distinct nouns (e.g. Alice Mare, Alice, and Mare all count as one distinct noun; dog and ball are two different nouns)
+  
+Madlibify:
+  - Possibly asks which story the user wants to use, how many sentences wanted
+  - Prompts user for input word with part of speech, tense (if applicable), plural or singular, feminine or masculine (maybe) based on labels given to the words in except by "Parts of Speech identifier"
+  - Replaces words in story with words given by user
+  - Print the text for reading
