@@ -1,12 +1,13 @@
 ~Finalize project idea
 ~Submit new proposal
 
+--------------------------------------
 IDEA: MadLib
 Three main parts: Part of speech identifier, Madlibify, pulling up text files
 
 Pulling up text files:
   - Opens a plaintext file of a book from Project Gutenberg
-  - A random except containing x sentences is returned.
+  - A random excerpt containing x sentences is returned.
     ~ Done by counting x number of periods(.) not preceded by Mr, Ms, Mrs, etc. (and single letters?)
 
 Parts of Speech identifier:
