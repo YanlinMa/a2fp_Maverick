@@ -1,2 +1,8 @@
-Have a base dictionary that we can build upon everytime we encounter a new word.
+Have a base dictionary that we can build upon:
+  -everytime we encounter a new word.
+  -add by running MadLib.
 Frequency of words
+Prompt user if encounter a new word for category.
+  -If yes, add to list.
+  -If no, ignore.
+  
