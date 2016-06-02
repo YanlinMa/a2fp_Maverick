@@ -3,7 +3,7 @@
  | |\/| / _` \ V / -_) '_| / _| / /
  |_|  |_\__,_|\_/\___|_| |_\__|_\_\
                                    
- -- Dorothy Ng, Andrea Ma, Ege Duman --
+ -- Dorothy Ng, Andrea Ma, Denis Duman --
 
 Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 
