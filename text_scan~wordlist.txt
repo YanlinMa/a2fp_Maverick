@@ -1,1 +1,2 @@
 Have a base dictionary that we can build upon everytime we encounter a new word.
+Frequency of words
