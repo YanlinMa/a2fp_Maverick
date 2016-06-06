@@ -1,8 +1,21 @@
-Have a base dictionary that we can build upon:
-  -everytime we encounter a new word.
-  -add by running MadLib.
-Frequency of words
-Prompt user if encounter a new word for category.
-  -If yes, add to list.
-  -If no, ignore.
-  
+Scanner
+  - Random on ProjG based on URL
+
+Analyzer
+  - Word Categorizer
+    takes in an unknown string
+    checks across <tbd> for category
+    if not in category, prompt user to sort
+  - Word - data type
+    string
+    class
+    accessor
+    mutator
+    constructor
+
+MadLibber
+  - Word Analyzer (after Categorizer)
+    takes in string (user input) and category
+    returns boolean based if in category dictionary
+    if not, then ask user if they are sure if it is a <PoS>, then put into dictionary
+
