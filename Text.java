@@ -1,5 +1,8 @@
-//Choose a random text from Project Gutenberg or solicit user input?
+//Choose a random text from Project Gutenbegr
 //Randomly generate a valid book number and input that into a string URL
+
+import java.net.URL;
+import java.net.URLConnection;
 
 public class Text {
 
