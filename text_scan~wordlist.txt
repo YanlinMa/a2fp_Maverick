@@ -1,6 +1,7 @@
 Scanner
   - Random on ProjG based on URL
   - breaks up text by word, space, and punctuation, separated by commas
+      space and punc makes one element
   - returns an excerpt
   - check for exceptions w/ periods such as preceded by one letter, Mr, Ms, Mrs, Dr, etc.
 
