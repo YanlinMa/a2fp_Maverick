@@ -4,6 +4,7 @@ Scanner
       space and punc makes one element
   - returns an excerpt
   - check for exceptions w/ periods such as preceded by one letter, Mr, Ms, Mrs, Dr, etc.
+  - check for hyphens
 
 Analyzer
   - Word Categorizer
