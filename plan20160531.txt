@@ -2,7 +2,7 @@ Idea: MadLib
 Three main parts: extract text files, identify parts of speech to select which words to replace, fill text with user input
 
 Pulling up text files:
-  - Opens a plaintext file of a book from Project Gutenberg
+  - Opens a random plaintext file of a book from Project Gutenberg
   - A random excerpt containing x sentences is returned.
     ~ Done by counting x number of periods(.) not preceded by Mr, Ms, Mrs, etc. (and single letters?)
 
