@@ -1,6 +1,3 @@
-Project approval???
-
---------------------------------------
 Idea: MadLib
 Three main parts: extract text files, identify parts of speech to select which words to replace, fill text with user input
 
