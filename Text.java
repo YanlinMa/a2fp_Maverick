@@ -7,7 +7,7 @@ import java.net.URLConnection;
 public class Text {
 
   //Randomly select a book serial number
-  int book = Math.random() * (52253 - 1) + 1;
+  int book = Math.random() * (52260 - 1) + 1;
 
   URL url = new URL("");
 
