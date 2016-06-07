@@ -36,3 +36,6 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 >> June 1, 2016
   Submitted revised project proposal via email
 ~~ DN, AM, DD
+
+>>June 6, 2016
+  Sorted out ideas and came to an agreement.
