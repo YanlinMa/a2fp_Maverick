@@ -37,5 +37,12 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
   Submitted revised project proposal via email
 ~~ DN, AM, DD
 
->>June 6, 2016
-  Sorted out ideas and came to an agreement.
+>> June 6, 2016
+  Sorted out ideas and came to an agreement
+  Gave each person one part of the project to work on
+~~ DN, AM, DD  
+
+>> June 7, 2016
+  Worked on the parts of the project we're responsible for
+~~ DN, AM, DD
+
