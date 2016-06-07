@@ -1,0 +1,26 @@
+-Scanner
+ -  - Random on ProjG based on URL
+ -  - breaks up text by word, space, and punctuation, separated by commas
+ -      space and punc makes one element
+ -  - returns an excerpt
+ -  - check for exceptions w/ periods such as preceded by one letter, Mr, Ms, Mrs, Dr, etc.
+ -  - check for hyphens
+ -
+ -Analyzer
+ -  - Word Categorizer
+ -    takes in an unknown string
+ -    checks across <tbd> for category
+ -    if not in category, prompt user to sort
+ -  - Word - data type
+ -    string
+ -    class
+ -    accessor
+ -    mutator
+ -    constructor
+ -
+ -MadLibber
+ -  - Word Analyzer (after Categorizer)
+ -    takes in string (user input) and category
+ -    returns boolean based if in category dictionary
+ -    if not, then ask user if they are sure if it is a <PoS>, then put into dictionary
+ -
