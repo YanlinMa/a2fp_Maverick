@@ -1,15 +1,15 @@
-//Choose a random text from Project Gutenbegr
+//Choose a random text from Project Gutenberg
 //Randomly generate a valid book number and input that into a string URL
 
-import java.net.URL;
-import java.net.URLConnection;
+import java.net.*;
+import java.io.*;
 
 public class Text {
 
   //Randomly select a book serial number
   int book = Math.random() * (52260 - 1) + 1;
 
-  URL url = new URL("");
+  URL gutenberg = new URL("");
 
 
 
