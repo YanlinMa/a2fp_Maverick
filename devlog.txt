@@ -30,7 +30,7 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 ~~ DN, AM, DD
 
 >> May 31, 2016
-  Finalized MadLib idea, using Project Gutenburg to pull excerpts to modify
+  Finalized MadLib idea, using Project Gutenberg to pull excerpts to modify
 ~~ DN, AM, DD
 
 >> June 1, 2016
@@ -40,7 +40,7 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 >> June 6, 2016
   Sorted out ideas and finalized our plan
   Gave each person one part of the project to work on
-  Determined how we're going to download texts from Project Gutenburg
+  Determined how we're going to download texts from Project Gutenberg
 ~~ DN, AM, DD  
 
 >> June 7, 2016
