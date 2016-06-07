@@ -40,6 +40,7 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 >> June 6, 2016
   Sorted out ideas and came to an agreement
   Gave each person one part of the project to work on
+  Determined how we're going to download texts from Project Gutenburg
 ~~ DN, AM, DD  
 
 >> June 7, 2016
