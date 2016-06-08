@@ -15,8 +15,8 @@ public class Text {
   URL gutenberg = new URL(url);
   BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
   
-  String input = in.readLine();
-  while (input != null)
+  String input;
+  while ((input = in.readLine()) != null)
     System.out.println(input);
   in.close();
   
