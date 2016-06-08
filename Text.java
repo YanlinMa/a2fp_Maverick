@@ -22,19 +22,4 @@ public class Text {
   
   //Check for string "Language: English" to make sure it's English
 
-
-        String inputLine;
-        while ((inputLine = in.readLine()) != null)
-            System.out.println(inputLine);
-        in.close();
-
-        String str;
-        while ((str = in.readLine()) != null) {
-            str = in.readLine().toString();
-            System.out.println(str);
-            // str is one line of text; readLine() strips the newline character(s)
-        }
-        in.close();
-
-
 }
