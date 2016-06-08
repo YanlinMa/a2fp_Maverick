@@ -15,10 +15,10 @@ public class Text {
   URL gutenberg = new URL(url);
   BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
   
-  String inputLine;
-        while ((inputLine = in.readLine()) != null)
-            System.out.println(inputLine);
-        in.close();
+  String input;
+  while ((input = in.readLine()) != null)
+    System.out.println(input);
+  in.close();
   
   //Check for string "Language: English" to make sure it's English
 
