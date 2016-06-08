@@ -21,11 +21,9 @@ public class Text {
 	    // exception handler code here
 	    // ...
 	}
-
-
-	/*BufferedReader in = new BufferedReader(new InputStreamReader(gutenberg.openStream()));
+	BufferedReader in = new BufferedReader(new InputStreamReader(gutenberg.openStream()));
 	
-	String input;
+	/*String input;
 	while ((input = in.readLine()) != null)
 	    System.out.println(input);
 	in.close();
