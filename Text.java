@@ -8,9 +8,11 @@ public class Text {
 
   //Randomly select a book serial number
   //Does every serial number lead to a valid book?
-  int book = Math.random() * (52260 - 1) + 1;
+  int serial = Math.random() * (52771 - 1) + 1;
 
-  URL gutenberg = new URL("");
+  String url = "http://www.gutenberg.org/files/" + serial + "/" + serial + "-0.txt";
+  
+  URL gutenberg = new URL(url);
   BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
   
   String input;
