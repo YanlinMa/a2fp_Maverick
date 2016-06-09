@@ -48,3 +48,4 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
   Submitted final project proposal
 ~~ DN, AM, DD
 
+>> June 8, 2016
