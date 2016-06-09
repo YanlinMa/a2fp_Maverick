@@ -1,8 +1,3 @@
-/*string
-category
-accessor
-mutator
-constructor*/
 public class Word {
   String word;
   String PoS;
