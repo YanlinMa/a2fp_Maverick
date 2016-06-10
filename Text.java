@@ -14,14 +14,26 @@ public class Text {
 	int serial = (int)(Math.random() * (52771 - 1) + 1);
 	
 	String url = "http://www.gutenberg.org/files/" + serial + "/" + serial + "-0.txt";
+	
+	URL gutenberg = null;
+
 	try {
-	    URL gutenberg = new URL("http://www.gutenberg.org/ebooks/52770/");
+	    gutenberg = new URL("http://www.gutenberg.org/files/52296/52296-h/52296-h.htm");
 	} 
 	catch (MalformedURLException e) {
 	    // exception handler code here
 	    // ...
 	}
-	BufferedReader in = new BufferedReader(new InputStreamReader(gutenberg.openStream()));
+	
+	try {
+	    if ( gutenberg != null ) {
+		BufferedReader in = new BufferedReader(new InputStreamReader(gutenberg.openStream()));
+	    }
+	}
+	catch (IOException e) { // catch all IOExceptions not handled by previous catch blocks
+	    System.out.println("General I/O exception: " + e.getMessage());
+	    e.printStackTrace();
+	} 
 	
 	/*String input;
 	while ((input = in.readLine()) != null)
