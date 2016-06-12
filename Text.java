@@ -14,6 +14,7 @@ public class Text {
 	
         //Input file
         String file = "Stories.csv";
+	System.out.println(file);
         BufferedReader fileReader = null;
 
 	//Read file
