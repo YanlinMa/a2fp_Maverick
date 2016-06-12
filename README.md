@@ -2,4 +2,4 @@
 Dorothy Ng, Andrea Ma, Denis Duman
 
 # MadLib
-Selects a text excerpt from Project Gutenberg and replaces words with user input
+Selects from excerpts of Project Gutenberg books and replaces words with user input
