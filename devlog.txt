@@ -53,3 +53,7 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 ~~ AM
   Word.java created.
 ~~ DN, DD
+
+>> June 11, 2016
+  Identifier.java finished, needs one final check, needs comments
+~~ DD
