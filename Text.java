@@ -34,7 +34,7 @@ public class Text {
 
 	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	Method two
-	Convert csv file into ArrayList
+	//Convert csv file into ArrayList
 	File texts = new File("Stories.csv");
 	System.out.println(texts);
 	Scanner inputStream = new Scanner(texts);
@@ -49,6 +49,7 @@ public class Text {
 	//Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
 	String text = stories.get(choose);
+	
 	
     }
 
