@@ -50,9 +50,14 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 
 >> June 8, 2016
   Enter random URL from Project Gutenberg
+  Text.java in progress
 ~~ AM
   Word.java created.
 ~~ DN, DD
+
+>> June 10, 2016
+  Project Gutenberg does not allow free access of books, changing plan to downloading text
+~~ AM
 
 >> June 11, 2016
   Identifier.java finished, needs one final check, needs comments
