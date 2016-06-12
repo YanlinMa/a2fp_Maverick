@@ -14,6 +14,7 @@ public class Text {
 	
 	//Convert csv file into ArrayList
 	File texts = new File("Stories.csv");
+	System.out.println(texts);
 	Scanner inputStream = new Scanner(texts);
 	while(inputStream.hasNext()) {
 		String data = inputStream.next();
