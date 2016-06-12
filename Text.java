@@ -12,6 +12,8 @@ public class Text {
 	//Store text stories
 	ArrayList<String> stories = new ArrayList<String>();
 	
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Method one
         //Input file
         String file = "Stories.csv";
 	System.out.println(file);
@@ -28,8 +30,11 @@ public class Text {
         	}
         }
 	fileReader.close();
+	*/
 
-	/*Convert csv file into ArrayList
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Method two
+	Convert csv file into ArrayList
 	File texts = new File("Stories.csv");
 	System.out.println(texts);
 	Scanner inputStream = new Scanner(texts);
@@ -40,6 +45,11 @@ public class Text {
 	}
 	inputStream.close();
 	*/
+	
+	//Random text out of the ArrayList
+	int choose = (int)(Math.random()*43);
+	String text = stories.get(choose);
+	
     }
 
 }
