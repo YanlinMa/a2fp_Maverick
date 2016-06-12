@@ -64,5 +64,5 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 ~~ DD
 
 >> June 12, 2016
-  Manually downloaded 30 short excerpts from Project Gutenberg
+  Manually downloaded 42 short excerpts from Project Gutenberg
 ~~ AM
