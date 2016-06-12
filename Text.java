@@ -9,13 +9,29 @@ public class Text {
     
     public static void main(String[] args) {
 	
-	//Array for text stories
+	//Store text stories
 	ArrayList<String> stories = new ArrayList<String>();
 	
-	//Convert csv file into ArrayList
+        //Input file
+        String file = "Stories.csv";
+        BufferedReader fileReader = null;
+
+	//Read file
+        String delimiter = ",";
+        String line = "";
+        fileReader = new BufferedReader(new FileReader(file));
+        while ((line = fileReader.readLine()) != null) {
+        	String[] tokens = line.split(delimiter);
+        	for (String token : tokens) {
+        		stories.add(token);
+        	}
+        }
+	fileReader.close();
+
+	/*Convert csv file into ArrayList
 	File texts = new File("Stories.csv");
 	System.out.println(texts);
-	/*Scanner inputStream = new Scanner(texts);
+	Scanner inputStream = new Scanner(texts);
 	while(inputStream.hasNext()) {
 		String data = inputStream.next();
 		stories.add(data);
