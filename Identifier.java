@@ -35,8 +35,7 @@ public class Identifier{
 
 	public Word categorizer(String s){
 		Word ret;
-		String l2 = s.toLowerCase();
-		Object l1 = s.toLowerCase();
+		String l = s.toLowerCase();
 		char test = l2.charAt(0);
 		for (int i = 0; i < l2.length();i++) {
 		    if (!(Character.isLetter(l2.charAt(i)))){
