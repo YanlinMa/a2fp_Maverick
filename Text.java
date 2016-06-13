@@ -1,5 +1,5 @@
-//Choose a random text from Project Gutenberg
-//Randomly generate a valid book number and input that into a string URL
+//Choose a random text from Stories.csv
+//Parse the text, separating it into an ArrayList
 
 import java.net.*;
 import java.io.*;
@@ -11,33 +11,10 @@ public class Text {
 	
 	//Store text stories
 	ArrayList<String> stories = new ArrayList<String>();
-	
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	Method one
-        //Input file
-        String file = "Stories.csv";
-	System.out.println(file);
-        BufferedReader fileReader = null;
 
-	//Read file
-        String delimiter = ",";
-        String line = "";
-        fileReader = new BufferedReader(new FileReader(file));
-        while ((line = fileReader.readLine()) != null) {
-        	String[] tokens = line.split(delimiter);
-        	for (String token : tokens) {
-        		stories.add(token);
-        	}
-        }
-	fileReader.close();
-	*/
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	//Method two
-	//Convert csv file into ArrayList*/
-	//File texts = new File("Stories.csv");
+	//Read csv file
 	try {
-		Scanner inputStream = new Scanner(new FileReader("Stories.csv"));
+		Scanner inputStream = new Scanner(new File("Stories.csv"));
 		while(inputStream.hasNext()) {
 			String data = inputStream.next();
 			stories.add(data);
