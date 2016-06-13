@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Identifier{
 	
-	private List<String> ProNoun = new List<String>();
+	private ArrayList<String> ProNoun = new ArrayList<String>();
 	private List<String> PluNoun;
 	private List<String> SinNoun;
 	private List<String> Adj;
