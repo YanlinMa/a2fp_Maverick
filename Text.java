@@ -61,8 +61,8 @@ public class Text {
 			part = text.substring(beg,i);
 			parsed.add(part);
 		}
-		return parsed;
 	}
+	return parsed;
     }
     
     public static void main(String[] args) {
