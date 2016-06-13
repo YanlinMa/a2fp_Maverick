@@ -44,16 +44,16 @@ public class Text {
 		else if (Character.isLetter(text.substring(i,i+1).charAt(0))) {
 			int beg = i;
 			i++;
-			while (Character.isLetter(text.substring(i,i+1))||text.substring(i,i+1).equals("-")||text.substring(i,i+1).equals("'")) {
+			while (Character.isLetter(text.substring(i,i+1).charAt(0))||text.substring(i,i+1).equals("-")||text.substring(i,i+1).equals("'")) {
 				i++;
 			}
 			part = text.substring(beg,i);
 		}
 		//Split by punctuation and spaces
-		else if (!Character.isLetter(text.substring(i,i+1))) {
+		else if (!Character.isLetter(text.substring(i,i+1).charAt(0))) {
 			int beg = i;
 			i++;
-			while (!Character.isLetter(text.substring(i,i+1))) {
+			while (!Character.isLetter(text.substring(i,i+1).charAt(0))) {
 				i++;
 			}
 			part = text.substring(beg,i);
