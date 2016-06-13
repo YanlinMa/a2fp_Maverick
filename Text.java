@@ -38,6 +38,7 @@ public class Text {
 		//Possessive "s" needs to be split
 		if (text.substring(i,i+3).equals("'s ")) {
 			part = text.substring(i,i+3);
+			parsed.add(part);
 			i += 3;
 		}
 		//Split by words
@@ -48,6 +49,7 @@ public class Text {
 				i++;
 			}
 			part = text.substring(beg,i);
+			parsed.add(part);
 		}
 		//Split by punctuation and spaces
 		else if (!Character.isLetter(text.substring(i,i+1).charAt(0))) {
@@ -57,8 +59,8 @@ public class Text {
 				i++;
 			}
 			part = text.substring(beg,i);
+			parsed.add(part);
 		}
-		parsed.add(part);
 	}
 	//return parsed;
     }
