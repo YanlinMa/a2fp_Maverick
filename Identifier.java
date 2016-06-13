@@ -82,7 +82,6 @@ public class Identifier{
 		else {
 			System.out.println("Please identify this word: \n For proper nouns type: ProNoun \n For plural nouns type: PluNoun \n For singular nouns type: SinNoun \n For adjectives type: Adj \n For adverb type: Advb \n For future verbs type: FutVerb \n For past verbs type: PstVerb \n For present verbs type: PreVerb \n For other type: Other  \n" );
 			String response = Keyboard.readString();
-			l = l.toString();
 			if (response.equals("ProNoun")) {
 				ProNoun.add(l2);
 			}
