@@ -7,11 +7,6 @@ public class Word {
     word = "";
     PoS = "";
   }
-  //word only
-  public Word(String w){
-    word = w;
-    PoS = "";
-  }
   //word and PoS
   public Word(String w, String p){
     word = w;
