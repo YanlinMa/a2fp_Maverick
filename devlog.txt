@@ -62,9 +62,11 @@
 ~~ DD
 
 >> June 12, 2016
+  Populating local word lists with 50 base words, second check of Identifier.java
+~~ DD
   Manually downloaded 42 short excerpts from Project Gutenberg
   Uploaded Stories.csv
   Finished Text.java
+  Debug Identifier.java, reinitialized all the ArrayLists from their files
+  Fix Identifier.java to actually include the weird we're identifying
 ~~ AM
-  Populating local word lists with 50 base words, second check of Identifier.java
-~~ DD
