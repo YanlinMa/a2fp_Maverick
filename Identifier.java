@@ -44,7 +44,7 @@ public class Identifier{
 		    }
                 }*/
                 CharSequence cs = l;
-                System.out.println(cs);
+                System.out.println(ProNoun);
 		/*if (ProNoun.contains(cs)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
