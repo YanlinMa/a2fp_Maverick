@@ -25,12 +25,11 @@ public class Text {
         	e.printStackTrace();
 	}
 	
-	System.out.println(stories);
-	
-	/*Random text out of the ArrayList
+	//Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
 	String text = stories.get(choose);
-	ArrayList<String> parse = new ArrayList<String>();
+	System.out.println(text);
+	/*ArrayList<String> parse = new ArrayList<String>();
 	int i = 0;
 	while (i<text.length()) {
 		if (text.substring(i,i+1).equals(" ")) {
