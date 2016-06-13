@@ -38,34 +38,44 @@ public class MadLibber {
 		for (int a = 0; a<PUNC.length();a++){
 		    if (text.get(i).indexOf(PUNC.substring(a,a+1)) == -1){
 			origWd.add(id.categorizer(text.get(i)));
-			//replaces
-			//check if noun
-			if (origWd.get(i).getPoS().equals("PluNoun") ||
-			    origWd.get(i).getPoS().equals("SinNoun")){
-			    repWd.add(replace(origWd.get(i)));
-			}
-			//if noun used before
-			else if (origWd.indexOf(origWd.get(i).getPoS()) < i ||
-			    origWd.indexOf(origWd.get(i).getPoS()) < i){
-			    //used before, then take the noun replaced
-			    repWd.add(repWd.get(origWd.indexOf(origWd.get(i))));
-			}
-			else {//not a noun/noun used before
-			    repWd.add(replace(origWd.get(i)));
-			}
 		    }
-		    else { //if not a word
-			Word not = new Word(text.get(i),"not");
-			origWd.add(not);
+		    else {
+			Word x = new Word(text.get(i),"not");
+			origWd.add(x);
 		    }
 		}
 	    }
+	    //replacer
+	    for (int i = 0;i<origWd.size();i++){
+		//check if word
+		if (origWd.get(i).getPoS().equals("not")){
+		    repWd.add(origWd.get(i));
+		}
+		//check if noun
+		else if (origWd.get(i).getPoS().equals("PluNoun") ||
+		    origWd.get(i).getPoS().equals("SinNoun")){
+		    //if noun used before
+		    if (origWd.indexOf(origWd.get(i).getPoS()) < i ||
+			origWd.indexOf(origWd.get(i).getPoS()) < i){
+			//used before, then take the noun replaced
+			repWd.add(repWd.get(origWd.indexOf(origWd.get(i))));
+		    }
+		    else {
+			repWd.add(replace(origWd.get(i)));
+		    }
+		}
+		else if (origWd.get(i).getPoS().equals("Other")){
+		    repWd.add(origWd.get(i));
+		}
+		else {//not a noun/noun used before
+		    repWd.add(replace(origWd.get(i)));
+		}
+	    }
 	}
-	else {
-	    return;
-	}
+	else return; //end
     }
-    
+	    
+
     public String toString(){
 	String ret="";
 	for (int i=0;i<repWd.size();i++){

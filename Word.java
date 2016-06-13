@@ -35,4 +35,8 @@ public class Word {
   public void setPoS(String p){
     PoS = p;
   }
+    public String toString(){
+	return word;
+    }
+
 }
