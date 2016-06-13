@@ -20,6 +20,13 @@ public class MadLibber {
     public Word replace(Word orig){
 	System.out.print("Please supply us with a "+orig.getPoS()+":");
 	String userWd = Keyboard.readString();
+	String l = userWd.toLowerCase();
+	for (int i = 0; i < l.length();i++) {
+	    if (!((int)l.charAt(i) >= 97 && (int)l.charAt(i) <= 122)) {
+		System.out.println("Error: You did not input letters only. Word will be skipped.");
+		return orig;
+	    }
+	}
 	Word nwWrd = id.categorizer(userWd);
 	return nwWrd;
     }
@@ -36,25 +43,29 @@ public class MadLibber {
 	    //categorizes the words
 	    for (int i = 0; i<text.size();i++){
 		//non-letters?
-		for (int a = 0; a<PUNCNO.length();a++){
-		    if (text.get(i).indexOf(PUNCNO.substring(a,a+1)) != -1){
-			Word x = new Word(text.get(i),"not");
-			origWd.add(x);
+		String l = text.get(i).toLowerCase();
+		boolean notWd = false;
+		for (int p = 0; p < l.length();p++) {
+		    if (!((int)l.charAt(p) >= 97 && (int)l.charAt(p) <= 122)) {
+			notWd = true;
 		    }
 		}
-		//all letters
-		Word y = id.categorizer(text.get(i));
-		origWd.add(y);
+		if (notWd) origWd.add(new Word(text.get(i),"not"));
+		else {
+		    //all letters
+		    Word y = id.categorizer(text.get(i));
+		    origWd.add(y);
+		}
 	    }
 	    //replacer
 	    for (int i = 0;i<origWd.size();i++){
-		//check if word
+		//check if not a word
 		if (origWd.get(i).getPoS().equals("not")){
 		    repWd.add(origWd.get(i));
 		}
 		//check if noun
 		else if (origWd.get(i).getPoS().equals("PluNoun") ||
-		    origWd.get(i).getPoS().equals("SinNoun")){
+			 origWd.get(i).getPoS().equals("SinNoun")){
 		    //if noun used before
 		    if (origWd.indexOf(origWd.get(i).getPoS()) < i ||
 			origWd.indexOf(origWd.get(i).getPoS()) < i){
