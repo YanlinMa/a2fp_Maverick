@@ -9,7 +9,7 @@ public class Text {
     
     public static void main(String[] args) {
 	
-	Store text stories
+	//Store text stories
 	ArrayList<String> stories = new ArrayList<String>();
 	
 	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~
