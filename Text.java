@@ -36,14 +36,18 @@ public class Text {
 	//Method two
 	//Convert csv file into ArrayList*/
 	//File texts = new File("Stories.csv");
-	Scanner inputStream = new Scanner(new FileReader("Stories.csv"));
-	while(inputStream.hasNext()) {
-		String data = inputStream.next();
-		stories.add(data);
-                System.out.println(data);
-	}
+	try {
+		Scanner inputStream = new Scanner(new FileReader("Stories.csv"));
+		while(inputStream.hasNext()) {
+			String data = inputStream.next();
+			stories.add(data);
+                	System.out.println(data);
+		}
 	inputStream.close();
-	//
+	}
+	catch (FileNotFoundException e) {
+        	e.printStackTrace();
+	}
 	
 	/*Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
