@@ -7,7 +7,7 @@ public class MadLibber {
     private Identifier id;
     private ArrayList<Word> origWd;
     private ArrayList<Word> repWd;
-    private final static String PUNC = " !@#$%^&*()_=+`~[]\\{}|;':\",./<>?";
+    private final static String PUNCNO = " !@#$%^&*()_=+`~[]\\{}|;':\",./<>?1234567890";
 
     public MadLibber (){
 	id = new Identifier();
@@ -35,15 +35,15 @@ public class MadLibber {
 	    ArrayList<String> text = b.parse();
 	    //categorizes the words
 	    for (int i = 0; i<text.size();i++){
-		for (int a = 0; a<PUNC.length();a++){
-		    if (text.get(i).indexOf(PUNC.substring(a,a+1)) == -1){
-			origWd.add(id.categorizer(text.get(i)));
-		    }
-		    else {
+		//non-letters?
+		for (int a = 0; a<PUNCNO.length();a++){
+		    if (text.get(i).indexOf(PUNCNO.substring(a,a+1)) != -1){
 			Word x = new Word(text.get(i),"not");
 			origWd.add(x);
 		    }
 		}
+		//all letters
+		origWd.add(id.categorizer(text.get(i)));
 	    }
 	    //replacer
 	    for (int i = 0;i<origWd.size();i++){
