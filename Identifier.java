@@ -7,14 +7,14 @@ import java.util.*;
 public class Identifier{
 	
 	private ArrayList<String> ProNoun = new ArrayList<String>();
-	private List<String> PluNoun;
-	private List<String> SinNoun;
-	private List<String> Adj;
-	private List<String> Advb;
-	private List<String> FutVerb;
-	private List<String> PstVerb;
-	private List<String> PreVerb;
-	private List<String> Other;
+	private ArrayList<String> PluNoun = new ArrayList<String>();
+	private ArrayList<String> SinNoun = new ArrayList<String>();
+	private ArrayList<String> Adj = new ArrayList<String>();
+	private ArrayList<String> Advb = new ArrayList<String>();
+	private ArrayList<String> FutVerb = new ArrayList<String>();
+	private ArrayList<String> PstVerb = new ArrayList<String>();
+	private ArrayList<String> PreVerb = new ArrayList<String>();
+	private ArrayList<String> Other = new ArrayList<String>();
 
 	public Identifier(){
 		try {
@@ -22,11 +22,105 @@ public class Identifier{
 			while(inputStream.hasNext()) {
 				String data = inputStream.nextLine();
 				ProNoun.add(data);
-				
 			}
 		inputStream.close();
 		}
-
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("PluNoun.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				PluNoun.add(data);
+			}
+		inputStream.close();
+		}
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("SinNoun.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				SinNoun.add(data);
+			}
+		inputStream.close();
+		}
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("Adj.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				Adj.add(data);
+			}
+		inputStream.close();
+		}
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("Advb.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				Advb.add(data);
+			}
+		inputStream.close();
+		}
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("FutVerb.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				FutVerb.add(data);
+			}
+		inputStream.close();
+		}
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("PstVerb.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				PstVerb.add(data);
+			}
+		inputStream.close();
+		}
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("PreVerb.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				PreVerb.add(data);
+			}
+		inputStream.close();
+		}
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
+		}
+		
+		try {
+			Scanner inputStream = new Scanner(new File("Other.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				Other.add(data);
+			}
+		inputStream.close();
+		}
 		catch (FileNotFoundException e) {
 	        	e.printStackTrace();
 		}
