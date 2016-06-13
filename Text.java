@@ -13,6 +13,7 @@ public class Text {
 	ArrayList<String> stories = new ArrayList<String>();
 
 	//Read csv file
+	//Convert to ArrayList
 	try {
 		Scanner inputStream = new Scanner(new File("Stories.csv"));
 		while(inputStream.hasNext()) {
@@ -28,17 +29,24 @@ public class Text {
 	//Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
 	String text = stories.get(choose);
-	System.out.println(text);
-	/*ArrayList<String> parse = new ArrayList<String>();
+	
+	//Parse the chosen text
+	ArrayList<String> parsed = new ArrayList<String>();
 	int i = 0;
 	while (i<text.length()) {
 		if (text.substring(i,i+1).equals(" ")) {
 			i++;
 		}
 		else if (Character.isLetter(text.substring(i,i+1))) {
-			while 
+			int beg = i;
+			i++;
+			while (Character.isLetter(text.substring(i,i+1))) {
+				i++;
+			}
+			String part = text.substring(beg,i);
+			parsed.add(part);
 		}
-	}*/
+	}
 	
     }
 
