@@ -36,6 +36,7 @@ public class Text {
 	while (i<text.length()) {
 		String part;
 		//Possessive "s" needs to be split
+		System.out.println(text.substring(i,i+1));
 		if (text.substring(i,i+3).equals("'s ")) {
 			part = text.substring(i,i+3);
 			i += 3;
