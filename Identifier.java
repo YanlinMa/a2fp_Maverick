@@ -38,7 +38,7 @@ public class Identifier{
 		String l = s.toLowerCase();
 		char test = l.charAt(0);
 		for (int i = 0; i < l.length();i++) {
-		    if (!((int)l.charAt(i) <= 97 && (int)l.charAt(i) >= 122)) {
+		    if (!((int)l.charAt(i) >= 97 && (int)l.charAt(i) <= 122)) {
 			return new Word(s,"not");
 		    }
                 }
