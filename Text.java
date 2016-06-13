@@ -9,7 +9,7 @@ public class Text {
     
     public static void main(String[] args) {
 	
-	//Store text stories
+	/*Store text stories
 	ArrayList<String> stories = new ArrayList<String>();
 	
 	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,9 +34,9 @@ public class Text {
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//Method two
-	//Convert csv file into ArrayList
+	//Convert csv file into ArrayList*/
 	File texts = new File("./Stories.csv");
-	System.out.println(texts);
+	/*System.out.println(texts);
 	Scanner inputStream = new Scanner(texts);
 	while(inputStream.hasNext()) {
 		String data = inputStream.next();
