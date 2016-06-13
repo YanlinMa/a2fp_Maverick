@@ -24,8 +24,9 @@ public class Identifier{
 				ProNoun.add(data);
 				
 			}
-		}
 		inputStream.close();
+		}
+
 		catch (FileNotFoundException e) {
 	        	e.printStackTrace();
 		}
