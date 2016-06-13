@@ -18,7 +18,6 @@ public class Text {
 		while(inputStream.hasNext()) {
 			String data = inputStream.next();
 			stories.add(data);
-                	System.out.println(data);
 		}
 	inputStream.close();
 	}
@@ -26,7 +25,9 @@ public class Text {
         	e.printStackTrace();
 	}
 	
-	/*Random text out of the ArrayList
+	System.out.println(stories);
+	
+	//Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
 	String text = stories.get(choose);
 	ArrayList<String> parse = new ArrayList<String>();
