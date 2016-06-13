@@ -5,8 +5,6 @@
                                    
  -- Dorothy Ng, Andrea Ma, Denis Duman --
 
-Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
-
 >> May 18, 2016
   Brainstormed a list of possible ideas:
     1010!
