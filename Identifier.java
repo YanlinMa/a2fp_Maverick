@@ -214,6 +214,7 @@ public class Identifier{
 		
 	public void initialize(List<String> a, String file) throws IOException{
 		BufferedReader reader = new BufferedReader(new FileReader(file));
+		System.out.println(file);
 		String s = "";
 		try {
         		
