@@ -32,10 +32,10 @@ public class Text {
 	fileReader.close();
 	*/
 
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	Method two
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//Method two
 	//Convert csv file into ArrayList
-	File texts = new File("Stories.csv");
+	File texts = new File("./Stories.csv");
 	System.out.println(texts);
 	Scanner inputStream = new Scanner(texts);
 	while(inputStream.hasNext()) {
@@ -44,7 +44,7 @@ public class Text {
                 System.out.println(data);
 	}
 	inputStream.close();
-	*/
+	//
 	
 	//Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
