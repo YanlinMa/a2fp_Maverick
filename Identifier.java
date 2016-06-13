@@ -127,7 +127,7 @@ public class Identifier{
 			return new Word(s,"Other");
 			}
 		}	*/
-		
+		return;
 	}
 
 	public Boolean analyzer(String s, String cat) {
