@@ -65,8 +65,8 @@ Topics: stacks, queue, backtracking, state space search, binary trees, quickSort
 
 >> June 12, 2016
   Manually downloaded 42 short excerpts from Project Gutenberg
+  Uploaded Stories.csv
+  Finished Text.java
 ~~ AM
-
->> June 11, 2016
   Populating local word lists with 50 base words, second check of Identifier.java
 ~~ DD
