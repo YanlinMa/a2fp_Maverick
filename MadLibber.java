@@ -61,6 +61,9 @@ public class MadLibber {
 	    }
 	    //replacer
 	    for (int i = 0;i<origWd.size();i++){
+	    	if (repWd.isEmpty()){
+                    repWd.add(new Word());
+                }
 		//check if not a word
 		if (origWd.get(i).getPoS().equals("not")){
 		    repWd.add(origWd.get(i));
