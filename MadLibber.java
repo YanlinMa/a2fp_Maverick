@@ -43,7 +43,8 @@ public class MadLibber {
 		    }
 		}
 		//all letters
-		origWd.add(id.categorizer(text.get(i)));
+		Word y = id.categorizer(text.get(i));
+		origWd.add(y);
 	    }
 	    //replacer
 	    for (int i = 0;i<origWd.size();i++){
