@@ -46,7 +46,7 @@ public class Text {
 	inputStream.close();
 	//
 	
-	//Random text out of the ArrayList
+	/*Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
 	String text = stories.get(choose);
 	ArrayList<String> parse = new ArrayList<String>();
@@ -58,7 +58,7 @@ public class Text {
 		else if (Character.isLetter(text.substring(i,i+1))) {
 			while 
 		}
-	}
+	}*/
 	
     }
 
