@@ -53,7 +53,6 @@ public class MadLibber {
 		    origWd.add(new Word(text.get(i),"not"));
 		}
 		else {
-		    System.out.print(text.get(i));
 		    //all letters
 		    Word y = id.categorizer(text.get(i));
 		    origWd.add(y);
