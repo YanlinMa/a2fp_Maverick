@@ -62,6 +62,7 @@ public class Text {
 			parsed.add(part);
 		}
 	}
+	System.out.println(parsed);
 	return parsed;
     }
     
