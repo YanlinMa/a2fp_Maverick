@@ -53,10 +53,10 @@ public class Text {
 			parsed.add(part);
 		}
 		//Split by punctuation and spaces
-		else if (!Character.isLetter(text.substring(i,i+1).charAt(0))&&(!(text.substring(i+1,i+2).equals("")))) {
+		else if (!Character.isLetter(text.substring(i,i+1).charAt(0))&&(i<text.length())) {
 			int beg = i;
 			i++;
-			while (!Character.isLetter(text.substring(i,i+1).charAt(0))&&(!(text.substring(i+1,i+2).equals("")))) {
+			while (!Character.isLetter(text.substring(i,i+1).charAt(0))&&(i<text.length())) {
 				i++;
 			}
 			part = text.substring(beg,i);
