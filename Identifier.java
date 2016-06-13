@@ -129,15 +129,12 @@ public class Identifier{
 	public Word categorizer(String s){
 		Word ret;
 		String l = s.toLowerCase();
-		System.out.println(l);
-		/*char test = l.charAt(0);
+		char test = l.charAt(0);
 		for (int i = 0; i < l.length();i++) {
 		    if (!(Character.isLetter(l.charAt(i)))){
 			return new Word(s,"not");
 		    }
-                }*/
-                CharSequence cs = l;
-                System.out.println(ProNoun);
+                }
 		if (ProNoun.contains(cs)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
