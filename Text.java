@@ -35,8 +35,8 @@ public class Text {
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//Method two
 	//Convert csv file into ArrayList*/
-	File texts = new File("Stories.csv");
-	Scanner inputStream = new Scanner(texts);
+	//File texts = new File("Stories.csv");
+	Scanner inputStream = new Scanner(new File("Stories.csv");
 	/*while(inputStream.hasNext()) {
 		String data = inputStream.next();
 		stories.add(data);
