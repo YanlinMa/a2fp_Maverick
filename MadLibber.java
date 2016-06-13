@@ -7,7 +7,6 @@ public class MadLibber {
     private Identifier id;
     private ArrayList<Word> origWd;
     private ArrayList<Word> repWd;
-    private final static String PUNCNO = " !@#$%^&*()_=+`~[]\\{}|;':\",./<>?1234567890";
 
     public MadLibber (){
 	id = new Identifier();
@@ -22,7 +21,7 @@ public class MadLibber {
 	String userWd = Keyboard.readString();
 	String l = userWd.toLowerCase();
 	for (int i = 0; i < l.length();i++) {
-	    if (!((int)l.charAt(i) <= 97 && (int)l.charAt(i) >= 122)) {
+	    if (!(Character.isLetter(l.charAt(i)))){
 		System.out.println("Error: You did not input letters only. Word will be skipped.");
 		return orig;
 	    }
@@ -46,7 +45,7 @@ public class MadLibber {
 		String l = text.get(i).toLowerCase();
 		boolean notWd = false;
 		for (int p = 0; p < l.length();p++) {
-		    if (!((int)l.charAt(p) <= 97 && (int)l.charAt(p) >= 122)) {
+		    if (!(Character.isLetter(l.charAt(p)))){
 			notWd = true;
 		    }
 		}
@@ -54,6 +53,7 @@ public class MadLibber {
 		    origWd.add(new Word(text.get(i),"not"));
 		}
 		else {
+		    System.out.print(text.get(i));
 		    //all letters
 		    Word y = id.categorizer(text.get(i));
 		    origWd.add(y);
