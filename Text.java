@@ -16,7 +16,7 @@ public class Text {
 	try {
 		Scanner inputStream = new Scanner(new File("Stories.csv"));
 		while(inputStream.hasNext()) {
-			String data = inputStream.next();
+			String data = inputStream.nextLine();
 			stories.add(data);
 		}
 	inputStream.close();
