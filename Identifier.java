@@ -42,6 +42,7 @@ public class Identifier{
 			return new Word(s,"not");
 		    }
                 }
+                l = l.toString();
 		if (ProNoun.contains(l)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
