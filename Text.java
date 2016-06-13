@@ -27,7 +27,7 @@ public class Text {
 	
 	System.out.println(stories);
 	
-	//Random text out of the ArrayList
+	/*Random text out of the ArrayList
 	int choose = (int)(Math.random()*43);
 	String text = stories.get(choose);
 	ArrayList<String> parse = new ArrayList<String>();
