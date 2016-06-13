@@ -59,8 +59,8 @@ public class Text {
 			}
 			part = text.substring(beg,i);
 		}
-		parsed.add(part);
+		parsed.add(part);*/
 	}
-	return parsed;*/
+	//return parsed;
     }
 }
