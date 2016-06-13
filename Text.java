@@ -33,6 +33,7 @@ public class Text {
 	//Parse the chosen text
 	ArrayList<String> parsed = new ArrayList<String>();
 	int i = 1;
+	System.out.println(text.length());
 	while (i<text.length()-1) {
 		String part;
 		//Possessive "s" needs to be split
