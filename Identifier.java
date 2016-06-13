@@ -42,7 +42,8 @@ public class Identifier{
 			return new Word(s,"not");
 		    }
                 }
-		if (ProNoun.contains(l)) {
+                CharSequence cs = l;
+		if (ProNoun.contains(cs)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
 		}
