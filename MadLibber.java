@@ -46,7 +46,7 @@ public class MadLibber {
 		String l = text.get(i).toLowerCase();
 		boolean notWd = false;
 		for (int p = 0; p < l.length();p++) {
-		    if (!((int)l.charAt(p) >= 97 && (int)l.charAt(p) <= 122)) {
+		    if (!((int)l.charAt(p) <= 97 && (int)l.charAt(p) >= 122)) {
 			notWd = true;
 		    }
 		}
