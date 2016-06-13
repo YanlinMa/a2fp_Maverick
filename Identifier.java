@@ -22,6 +22,8 @@ public class Identifier{
 			while(inputStream.hasNext()) {
 				String data = inputStream.nextLine();
 				ProNoun.add(data);
+				
+			}
 		}
 		inputStream.close();
 		catch (FileNotFoundException e) {
