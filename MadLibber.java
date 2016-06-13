@@ -1,9 +1,13 @@
+import java.net.*;
+import java.io.*;
+import java.util.*;
+
 //Driver file
 public class MadLibber {
     private Identifier id;
     private ArrayList<Word> origWd;
     private ArrayList<Word> repWd;
-    private final static String PUNC = "!@#$%^&*()_=+`~[]\\{}|;':\",./<>?";
+    private final static String PUNC = " !@#$%^&*()_=+`~[]\\{}|;':\",./<>?";
 
     public MadLibber (){
 	id = new Identifier();
@@ -14,7 +18,7 @@ public class MadLibber {
     //takes in a Word from the downloaded text
     //prompts user to give a word to replace it with
     public Word replace(Word orig){
-	System.out.print("Please supply us with a "+orig.getPos()+":");
+	System.out.print("Please supply us with a "+orig.getPoS()+":");
 	String userWd = Keyboard.readString();
 	Word nwWrd = id.categorizer(userWd);
 	return nwWrd;
@@ -27,16 +31,17 @@ public class MadLibber {
 	System.out.print("Your choice: ");
 	String ready = Keyboard.readString();
 	if (ready.equals("1")) {
-	    Text text = new Text();
+	    Text b = new Text();
+	    ArrayList<String> text = b.parse();
 	    //categorizes the words
 	    for (int i = 0; i<text.size();i++){
 		for (int a = 0; a<PUNC.length();a++){
 		    if (text.get(i).indexOf(PUNC.substring(a,a+1)) == -1){
-			origWd.add(id.categorizer(text[i]));
+			origWd.add(id.categorizer(text.get(i)));
 			//replaces
 			//check if noun
-			if (origWd.get(i).getPos().equals("PluNoun") ||
-			    origWd.get(i).getPos().equals("SinNoun")){
+			if (origWd.get(i).getPoS().equals("PluNoun") ||
+			    origWd.get(i).getPoS().equals("SinNoun")){
 			    repWd.add(replace(origWd.get(i)));
 			}
 			//if noun used before
@@ -50,7 +55,8 @@ public class MadLibber {
 			}
 		    }
 		    else { //if not a word
-			words.add(text[i],"not");
+			Word not = new Word(text.get(i),"not");
+			origWd.add(not);
 		    }
 		}
 	    }
@@ -62,8 +68,8 @@ public class MadLibber {
     
     public String toString(){
 	String ret="";
-	for (int i=0,i<repWd.size();i++){
-	    ret+=i.get(i);
+	for (int i=0;i<repWd.size();i++){
+	    ret+=repWd.get(i);
 	}
 	return ret;
     }
