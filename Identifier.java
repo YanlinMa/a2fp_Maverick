@@ -125,8 +125,8 @@ public class Identifier{
 			catch (IOException e){
 			e.printStackTrace();
 			return new Word(s,"Other");
-			}*/
-		}	
+			}
+		}	*/
 		
 	}
 
