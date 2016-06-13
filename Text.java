@@ -20,7 +20,7 @@ public class Text {
 			String data = inputStream.nextLine();
 			stories.add(data);
 		}
-	inputStream.close();
+		inputStream.close();
 	}
 	catch (FileNotFoundException e) {
         	e.printStackTrace();
@@ -34,20 +34,30 @@ public class Text {
 	ArrayList<String> parsed = new ArrayList<String>();
 	int i = 0;
 	while (i<text.length()) {
-		if (text.substring(i,i+1).equals(" ")) {
-			i++;
+		String part;
+		//Possessive "s" needs to be split
+		if (text.substring(i,i+3).equals("'s ")) {
+			part = text.substring(i,i+3);
+			i += 3;
 		}
 		else if (Character.isLetter(text.substring(i,i+1))) {
 			int beg = i;
 			i++;
-			while (Character.isLetter(text.substring(i,i+1))) {
+			while (Character.isLetter(text.substring(i,i+1))||text.substring(i,i+1).equals("-")||text.substring(i,i+1).equals("'")) {
 				i++;
 			}
-			String part = text.substring(beg,i);
-			parsed.add(part);
+			part = text.substring(beg,i);
 		}
+		else if (!Character.isLetter(text.substring(i,i+1))) {
+			int beg = i;
+			i++;
+			while (!Character.isLetter(text.substring(i,i+1))) {
+				i++;
+			}
+			part = text.substring(beg,i);
+		}
+		parsed.add(part);
 	}
-	
+	return parsed;
     }
-
 }
