@@ -38,7 +38,7 @@ public class Identifier{
 		String l = s.toLowerCase();
 		char test = l.charAt(0);
 		if ((int)test >= 97 && (int)test <= 122) {
-			return new Word(s);
+			return new Word(s,"not");
 		}
 		else if (ProNoun.contains(l)) {
 			ret = new Word(s, "ProNoun");
