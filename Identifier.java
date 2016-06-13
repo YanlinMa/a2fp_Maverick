@@ -30,6 +30,7 @@ public class Identifier{
 		catch (FileNotFoundException e) {
 	        	e.printStackTrace();
 		}
+	}
 
 	public Word categorizer(String s){
 		Word ret;
