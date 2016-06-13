@@ -56,7 +56,7 @@ public class Text {
 		else if (!Character.isLetter(text.substring(i,i+1).charAt(0))&&(!(text.substring(i+1,i+2).equals("")))) {
 			int beg = i;
 			i++;
-			while (!Character.isLetter(text.substring(i,i+1).charAt(0))) {
+			while (!Character.isLetter(text.substring(i,i+1).charAt(0))&&(!(text.substring(i+1,i+2).equals("")))) {
 				i++;
 			}
 			part = text.substring(beg,i);
