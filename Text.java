@@ -41,7 +41,7 @@ public class Text {
 			i += 3;
 		}
 		//Split by words
-		else if (Character.isLetter((char)text.substring(i,i+1))) {
+		else if (Character.isLetter(text.substring(i,i+1).charAt(0))) {
 			int beg = i;
 			i++;
 			while (Character.isLetter(text.substring(i,i+1))||text.substring(i,i+1).equals("-")||text.substring(i,i+1).equals("'")) {
