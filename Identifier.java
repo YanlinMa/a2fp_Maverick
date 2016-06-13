@@ -36,6 +36,7 @@ public class Identifier{
 	public Word categorizer(String s){
 		Word ret;
 		String l = s.toLowerCase();
+		System.out.println(l);
 		/*char test = l.charAt(0);
 		for (int i = 0; i < l.length();i++) {
 		    if (!(Character.isLetter(l.charAt(i)))){
@@ -43,6 +44,7 @@ public class Identifier{
 		    }
                 }*/
                 CharSequence cs = l;
+                System.out.println(cs);
 		if (ProNoun.contains(cs)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
