@@ -37,7 +37,7 @@ public class Text {
 		String part;
 		//Possessive "s" needs to be split
 		System.out.println(text.substring(i,i+1));
-		if (text.substring(i,i+3).equals("'s ")) {
+		/*if (text.substring(i,i+3).equals("'s ")) {
 			part = text.substring(i,i+3);
 			i += 3;
 		}
@@ -61,6 +61,6 @@ public class Text {
 		}
 		parsed.add(part);
 	}
-	return parsed;
+	return parsed;*/
     }
 }
