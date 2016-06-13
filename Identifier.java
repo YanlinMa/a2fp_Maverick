@@ -135,7 +135,7 @@ public class Identifier{
 			return new Word(s,"not");
 		    }
                 }
-		if (ProNoun.contains(cs)) {
+		if (ProNoun.contains(l)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
 		}
