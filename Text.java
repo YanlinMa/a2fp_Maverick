@@ -50,7 +50,15 @@ public class Text {
 	int choose = (int)(Math.random()*43);
 	String text = stories.get(choose);
 	ArrayList<String> parse = new ArrayList<String>();
-	
+	int i = 0;
+	while (i<text.length()) {
+		if (text.substring(i,i+1).equals(" ")) {
+			i++;
+		}
+		else if (Character.isLetter(text.substring(i,i+1))) {
+			while 
+		}
+	}
 	
     }
 
