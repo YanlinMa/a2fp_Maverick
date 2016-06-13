@@ -36,12 +36,12 @@ public class Identifier{
 	public Word categorizer(String s){
 		Word ret;
 		String l = s.toLowerCase();
-		char test = l.charAt(0);
+		/*char test = l.charAt(0);
 		for (int i = 0; i < l.length();i++) {
 		    if (!(Character.isLetter(l.charAt(i)))){
 			return new Word(s,"not");
 		    }
-                }
+                }*/
                 CharSequence cs = l;
 		if (ProNoun.contains(cs)) {
 			ret = new Word(s, "ProNoun");
