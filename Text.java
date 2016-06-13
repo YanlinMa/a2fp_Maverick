@@ -40,6 +40,7 @@ public class Text {
 			part = text.substring(i,i+3);
 			i += 3;
 		}
+		//Split by words
 		else if (Character.isLetter(text.substring(i,i+1))) {
 			int beg = i;
 			i++;
@@ -48,6 +49,7 @@ public class Text {
 			}
 			part = text.substring(beg,i);
 		}
+		//Split by punctuation and spaces
 		else if (!Character.isLetter(text.substring(i,i+1))) {
 			int beg = i;
 			i++;
