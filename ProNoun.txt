@@ -1,1 +1,1 @@
-
+"america","england","john","lucy","robert","vincent","emily","hillary","bernie","donald"
