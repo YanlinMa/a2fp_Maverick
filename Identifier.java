@@ -18,20 +18,15 @@ public class Identifier{
 
 	public Identifier(){
 		try {
-		initialize(ProNoun, "ProNoun.txt");
-		initialize(PluNoun, "PluNoun.txt");
-		initialize(SinNoun, "SinNoun.txt");
-		initialize(Adj, "Adj.txt");
-		initialize(Advb, "Advb.txt");
-		initialize(FutVerb, "FutVerb.txt");
-		initialize(PstVerb, "PstVerb.txt");
-		initialize(PreVerb, "PreVerb.txt");
-		initialize(Other, "Other.txt");
+			Scanner inputStream = new Scanner(new File("ProNoun.txt"));
+			while(inputStream.hasNext()) {
+				String data = inputStream.nextLine();
+				ProNoun.add(data);
 		}
-		catch (IOException e){
-			e.printStackTrace();
+		inputStream.close();
+		catch (FileNotFoundException e) {
+	        	e.printStackTrace();
 		}
-	}
 
 	public Word categorizer(String s){
 		Word ret;
