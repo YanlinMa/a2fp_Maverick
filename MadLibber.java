@@ -22,7 +22,7 @@ public class MadLibber {
 	String userWd = Keyboard.readString();
 	String l = userWd.toLowerCase();
 	for (int i = 0; i < l.length();i++) {
-	    if (!((int)l.charAt(i) >= 97 && (int)l.charAt(i) <= 122)) {
+	    if (!((int)l.charAt(i) <= 97 && (int)l.charAt(i) >= 122)) {
 		System.out.println("Error: You did not input letters only. Word will be skipped.");
 		return orig;
 	    }
@@ -50,12 +50,15 @@ public class MadLibber {
 			notWd = true;
 		    }
 		}
-		if (notWd) origWd.add(new Word(text.get(i),"not"));
+		if (notWd){
+		    origWd.add(new Word(text.get(i),"not"));
+		}
 		else {
 		    //all letters
 		    Word y = id.categorizer(text.get(i));
 		    origWd.add(y);
 		}
+		notWd = false;
 	    }
 	    //replacer
 	    for (int i = 0;i<origWd.size();i++){

@@ -37,10 +37,12 @@ public class Identifier{
 		Word ret;
 		String l = s.toLowerCase();
 		char test = l.charAt(0);
-		if ((int)test <= 97 && (int)test >= 122) {
+		for (int i = 0; i < l.length();i++) {
+		    if (!((int)l.charAt(i) <= 97 && (int)l.charAt(i) >= 122)) {
 			return new Word(s,"not");
-		}
-		else if (ProNoun.contains(l)) {
+		    }
+                }
+		if (ProNoun.contains(l)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
 		}
@@ -128,7 +130,7 @@ public class Identifier{
 	public Boolean analyzer(String s, String cat) {
 		String l = s.toLowerCase();
 		for (int i = 0; i < l.length();i++) {
-			if (!((int)l.charAt(i) >= 97 && (int)l.charAt(i) <= 122)) {
+			if (!((int)l.charAt(i) <= 97 && (int)l.charAt(i) >= 122)) {
 				System.out.println("This is gibberish, try again.");
 				return false;
 			}
