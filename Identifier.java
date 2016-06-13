@@ -35,30 +35,31 @@ public class Identifier{
 
 	public Word categorizer(String s){
 		Word ret;
-		String l = s.toLowerCase();
+		String l2 = s.toLowerCase();
+		Object l1 = s.toLowerCase();
 		char test = l.charAt(0);
 		for (int i = 0; i < l.length();i++) {
 		    if (!(Character.isLetter(l.charAt(i)))){
 			return new Word(s,"not");
 		    }
                 }
-		if (ProNoun.contains(l)) {
+		if (ProNoun.contains(l1)) {
 			ret = new Word(s, "ProNoun");
 			return ret;
 		}
-		else if (PluNoun.contains(l)) {
+		else if (PluNoun.contains(l1)) {
 			ret = new Word(s, "PluNoun");
 			return ret;
 		}
-		else if (SinNoun.contains(l)) {
+		else if (SinNoun.contains(l1)) {
 			ret = new Word(s, "SinNoun");
 			return ret;
 		}
-		else if (Adj.contains(l)) {
+		else if (Adj.contains(l1)) {
 			ret = new Word(s, "Adj");
 			return ret;
 		}
-		else if (Advb.contains(l)) {
+		else if (Advb.contains(l1)) {
 			ret = new Word(s, "Advb");
 			return ret;
 		}
@@ -66,15 +67,15 @@ public class Identifier{
 			ret = new Word(s, "FutVerb");
 			return ret;
 		}
-		else if (PstVerb.contains(l)) {
+		else if (PstVerb.contains(l1)) {
 			ret = new Word(s, "PstVerb");
 			return ret;
 		}
-		else if (PreVerb.contains(l)) {
+		else if (PreVerb.contains(l1)) {
 			ret = new Word(s, "PreVerb");
 			return ret;
 		}
-		else if (Other.contains(l)) {
+		else if (Other.contains(l1)) {
 			ret = new Word(s, "Other");
 			return ret;
 		}
@@ -83,31 +84,31 @@ public class Identifier{
 			String response = Keyboard.readString();
 			l = l.toString();
 			if (response.equals("ProNoun")) {
-				ProNoun.add(l);
+				ProNoun.add(l2);
 			}
 			else if (response.equals("PluNoun")) {
-				PluNoun.add(l);
+				PluNoun.add(l2);
 			}
 			else if (response.equals("SinNoun")) {
-				SinNoun.add(l);
+				SinNoun.add(l2);
 			}
 			else if (response.equals("Adj")) {
-				Adj.add(l);
+				Adj.add(l2);
 			}
 			else if (response.equals("Advb")) {
-				Advb.add(l);
+				Advb.add(l2);
 			}
 			else if (response.equals("PstVerb")) {
-				PstVerb.add(l);
+				PstVerb.add(l2);
 			}
 			else if (response.equals("FutVerb")) {
-				FutVerb.add(l);
+				FutVerb.add(l2);
 			}
 			else if (response.equals("PreVerb")) {
-				PreVerb.add(l);
+				PreVerb.add(l2);
 			}
 			else if (response.equals("Other")){
-				Other.add(l);
+				Other.add(l2);
 			}
 			else {
 				return categorizer(s);
@@ -115,7 +116,7 @@ public class Identifier{
 			try {			
 				String file = response + ".txt";
 				BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-				writer.write(",\"" + l + "\"");
+				writer.write(",\"" + l2 + "\"");
 				writer.close();
 				ret = new Word(s, response);
 				return ret;
