@@ -7,13 +7,9 @@ import java.util.*;
 
 public class Text {
     
-    public ArrayList<String> parse() {
-    	return parsed;
-    }
-    
-    public static void main(String[] args) {
-	
-	//Store text stories
+    public static ArrayList<String> parse() {
+    	
+    	//Store text stories
 	ArrayList<String> stories = new ArrayList<String>();
 
 	//Read csv file
@@ -65,7 +61,11 @@ public class Text {
 			part = text.substring(beg,i);
 			parsed.add(part);
 		}
+		return parsed;
 	}
+    }
+    
+    public static void main(String[] args) {
 	parse();
     }
 }
